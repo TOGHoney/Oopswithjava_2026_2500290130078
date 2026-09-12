@@ -5,8 +5,8 @@ public class Overloading{
         ob.sum(4,9);
         ob.sum(5.3, 8.7);
     }
-
-    class Addition{
+}
+class Addition{
         void sum(){
             System.out.printf("Additon\n");
         }
@@ -14,8 +14,7 @@ public class Overloading{
             System.out.printf("%d\n", a+b);
         }
 
-        void sum(float a, float b){
-            System.out.printf("%d\n", a+b);
+        void sum(double a, double b){
+            System.out.printf("%f\n", a+b);
         }
     }
-}
