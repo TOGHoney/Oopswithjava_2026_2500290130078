@@ -2,8 +2,8 @@ public class UseCase1{
     public static void main(String[] args){
         Book book1 = new Book("Java Basics", "J. Author", 350.0, "ISBN001");
         Book book2 = new Book("OOP Concepts", "K. Writer", 420.0, "ISBN002");
-        System.out.println(b1.getTitle()+"by"+b1.getAuthor());
-        System.out.println("Price: "+b2.getPrice());
+        System.out.println(book1.getTitle() + " by " + book1.getAuthor());
+        System.out.println("Price: "+book2.getPrice());
         System.out.println("Library: " + Book.libraryName );
         System.out.println("Total Books added: "+Book.bookcount);
 
@@ -29,16 +29,16 @@ class Book{
     public void setTitle(String t){
         this.author = t;
     }
-    public String getauthor(){
+    public String getAuthor(){
         return author;
     }
-    public void setauthor(String a){
+    public void setAuthor(String a){
         this.author = a;
     }
-    public double getprice(){
+    public double getPrice(){
         return price;
     }
-    public void setTitle(double p){
+    public void setPrice(double p){
         this.price = p;
     }
     public String getISBN(){
