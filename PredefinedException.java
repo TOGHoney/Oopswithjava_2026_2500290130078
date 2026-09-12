@@ -1,3 +1,5 @@
+
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 public class PredefinedException{
@@ -13,12 +15,13 @@ public class PredefinedException{
             System.out.println(arr[i]/b);
         }catch(FileNotFoundException e){
             System.out.println("Exception caught:" + e.getMessage());
-        }catch(ArithematicException e){
+        }catch(ArithmeticException e){
             System.out.println("Exception caught:"+e.getMessage());
-        }catch(ArrayIndexOutOfBoundException e){
+        }catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Exception caught: "+e.getMessage());
         }finally{
             System.out.println("program ended");
+            sc.close();
         }
     }
 }
