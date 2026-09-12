@@ -1,4 +1,4 @@
-Interface Rentables{
+interface Rentable{
     static double Tax_rate = 0.05;
     double calculateRent(int days);
 }
@@ -19,16 +19,16 @@ class Bike implements Rentable{
 }
 
 public class UseCase3{
-    public static void main(Stirng[] args){
+    public static void main(String[] args){
         Rentable car = new Car();
         Rentable bike = new Bike();
 
         double carRent = car.calculateRent(3);
         double bikeRent = bike.calculateRent(2);
 
-        System.out.println("Car rent include tax:"+(carRent+carRent*CarTax_rate));
-        System.out.println("Bike rent include tax:"+(bikeRent+bikeRent*BikeTax_rate));
-        System.out.println("Car rent include tax:"+(car.totalRent));
+        System.out.println("Car rent include tax:"+(carRent+carRent*Car.Tax_rate));
+        System.out.println("Bike rent include tax:"+(bikeRent+bikeRent*Bike.Tax_rate));
+        System.out.println("Car rent include tax:"+(Car.totalRent));
 
     }
 }
