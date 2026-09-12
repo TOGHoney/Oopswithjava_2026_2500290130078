@@ -23,12 +23,12 @@ class Circle extends Shape{
         this.rad = r;
     }
     double area(){
-        return 22/7*r*r;
+        return 22/7*rad*rad;
     }
 }
 public class UseCase2 {
     public static void main(String[] args) {
-        Shape shapes = new Shape[2];
+        Shape[] shapes = new Shape[2];
         shapes[0] = new Circle(5.0);
         shapes[1] = new Rectangle(4.0, 6.0);
  
