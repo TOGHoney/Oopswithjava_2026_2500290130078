@@ -29,7 +29,7 @@ class Smartphone extends Device implements Camera, MusicSystem{
         System.out.println("Smartphone is taking photo");
     }
     
-    void playMusic(){
+   public  void playMusic(){
         System.out.println("Playing music");
     }
 }
